@@ -1,0 +1,157 @@
+@media only screen and (max-width:600px) {
+    .home-container{
+        width: 100%;
+        /* visibility: hidden; */
+        background-color: beige;
+    }
+}
+.home-container{
+    position: relative;
+    display: flex;
+    text-align: start;
+    background-color: blue;
+}
+.home_row_container{
+    color: rgb(218, 216, 216);
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
+
+.Home_button_container{
+    position: relative;
+    padding: 30px 0px;
+}
+
+.Home_button{
+    background-color: whitesmoke;
+    padding:  18px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(46, 45, 45);
+    cursor: pointer;
+    border: none;
+    font-weight: 800;
+    margin-right: 5px;
+    
+}
+.Home_button_container .Home_btn_touch{
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+}
+.Home_button:hover{
+    background-color: rgb(218, 216, 216);
+    color: rgb(46, 45, 45);
+    box-shadow: 10px 10px 30px  4px rgb(218, 216, 216);  
+}
+.home-col-container{
+    background-color: #1f1f1f;
+    text-align: start;
+    padding: 0px;
+}
+
+.home-col-container h1{
+    font-size: 70px;
+    color: rgb(218, 216, 216);
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    word-spacing: 5px;
+}
+.home-col-container h1 span{
+  text-decoration: underline;
+  font-family: "Nunito", sans-serif;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 4px;
+}
+.home-col-container h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(218, 216, 216);
+}
+
+.home-col-container p span{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    font-weight: 800;
+}
+
+.home-col-container p{   
+    padding: 10px 0px;
+    font-weight: 600;   
+}
+
+.home-col-container img{
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 15px 15px rgb(133, 133, 133);
+}
+
+.background-elements
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(159, 162, 165); */
+    z-index: -1;
+    display: flex;
+    justify-content: space-around;
+}
+.background-elements .bg-circle{
+    
+    background-color: rgb(110, 112, 114);
+    border-radius: 50%;
+}
+.background-elements .circle-1{
+    /* float: right; */
+    width: 200px;
+    height: 200px;
+ 
+    /* background-color: aquamarine; */
+}
+
+.background-elements .circle-2{
+
+       width: 300px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+<section id="hero-container" class="container-fluid-* bg-secondary  d-flex fiex-column justify-content-center  position-relative home-container ">
+        <!-- <div class="background-elements">
+          <div class="bg-circle circle-1"></div>
+          <div class="bg-circle circle-2"></div>
+       </div> -->
+       <div class="container-lg-* bg-white ">
+        <div class="row w-100 d-flex fiex-column justify-content-between align-items-center home_row_container ">
+            <div class="col-lg-4  p-4 home-col-container bg-primary align-items-center" >
+                <h1>Port<span>Folio</span></h1>
+                <h3>Alexander Chen</h3>
+                <P class="lead">I'm a <span>Sofrtware Developer</span></P>
+                <p class="description">Passionate about creating exceptional digital 
+                    experiences that blend innovative 
+                    design with functional development. 
+                    Let's bring your vision to life.</p>
+                <div class="Home_button_container">
+                    <a href="#" class="Home_button">View My Work</a>
+                    <a href="#" class="Home_button Home_btn_touch">Get In Touch</a>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 home-col-container bg-primary align-items-center">
+                <img src="file:///C:/Users/KCDC%201/Desktop/kcdc%20cource%20java/portfolio/profile-2.webp" alt="" width="400px" height="400px">
+            </div>
+        </div>      
+       </div>
+        
+    </section> 

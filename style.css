@@ -1,0 +1,423 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #1f1f1f;   
+    font-family: "Nunito", sans-serif;
+ 
+}
+
+.index_page{
+    display: flex;
+    justify-content: start;
+    /* position: relative; */
+}
+
+.main_page{
+    width: 100%;
+     height: 5200px;   
+     margin-left:380px ;  
+     /* background-color: aqua; */
+}
+
+.header{
+    padding: 20px;    
+    display: flex;
+    justify-content: start;
+    width: 350px;
+    height: 100%;
+        overflow: hidden;
+
+     animation: mymove 0.7s ease;
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+ 
+  position: fixed;
+    /* visibility: hidden; */
+}
+
+@keyframes mymove {
+   0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+      
+    }
+}
+
+
+.bi-x
+{
+    visibility: hidden;
+}
+
+@media only screen and (max-width:600px) {
+    .main_page{
+    width: 100vh;
+     height:100vh;   
+     margin-left:0px ;  
+    }
+    .header-toggle{
+        position: absolute;
+        margin: 8px;
+        top:0px;
+        right: 0px;
+        z-index: 2;
+        transform: translate(0px,0px);
+        font-size: 30px;
+        display: flex;
+        justify-content: end;
+        color: rgb(56, 55, 55);
+        padding: 5px;
+        font-weight: 900;
+        border-radius: 100%;
+        background-color: whitesmoke;
+        /* background-color: rgb(165, 161, 161); */
+    }
+    .header{
+        position: fixed;
+        z-index: 1; 
+        /* background-color: aqua; */
+    }
+    .header{
+    padding: 20px;    
+    display: flex;
+    justify-content: start;
+    width: 350px;
+    height: 100%;
+    animation: none;
+    animation-fill-mode: both;
+    transform: translateX(-100%);
+    position: fixed;
+}
+@keyframes navopenanimation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes navcloseanimation {
+    0% {
+        transform: translateX(0);
+        
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+}
+
+@media only screen and (max-width:600px) {
+
+}
+
+@keyframes slideRightMoveAnimation {
+    0% {
+        transform: translateX(-60%);
+    }
+    100% {
+        transform: translateX(0);
+      
+    }
+}
+@keyframes slideLeftMoveAnimation {
+     0% {
+        transform: translateX(60%);
+        
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.hero-container{
+    height: 100vh;
+    position: relative;
+    padding: 10px;
+}
+.hero-contents
+{
+    position: absolute;
+    /* background-color: #1f1f1f; */
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+#hero-contents-row{
+   display: flex;
+   flex-direction: row;
+    justify-content: end;
+    padding: 10px;
+    overflow: hidden;
+    /* background-color: rgb(5, 19, 34); */
+}
+.hero-info{
+    /* z-index: 2; */
+    
+    /* background-color: rgb(44, 146, 194); */
+    margin-left: 8%;
+    padding: 15px;
+    animation: slideRightMoveAnimation 1s ease ;
+    animation-fill-mode:both ;
+    animation-duration: 0.9s;
+}
+
+.profile-container{
+    padding-bottom: 20px;
+    padding-right: 20px;
+    /* background-color: aliceblue; */
+    margin-left: 20%;
+}
+
+.profile-img{
+    animation: slideLeftMoveAnimation 1s ease ;
+    animation-fill-mode:both ;
+    animation-duration: 0.8s;
+    object-fit: cover;
+    border-radius: 2em;
+    box-shadow: 15px 15px rgb(107, 107, 107);
+    
+}
+
+.header-container{
+    border-radius: 20px;
+    background-color: #1f1f1f; 
+        /* background-color: #c22323d7;  */
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #6d6c6c;   
+}
+
+.header-container .navmenu ul {
+    width: 100%;
+    padding: 0px;
+    /* font-family: "Nunito", sans-serif; */
+}
+
+.header-container .navmenu ul li{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+}
+.lead{
+
+    display: flex;
+    justify-content:start;
+    /* background-color: aqua; */
+    /* color: #1f1f1f; */
+}
+
+.lead-content{
+    animation: letterAnimation 10s infinite;
+    animation-fill-mode:both ;
+    animation-duration: 8s;
+    
+    /* background-color: aliceblue; */
+    width:300px;
+    display: flex;
+    margin-left:5px ;
+    justify-content: start;
+    flex-wrap: nowrap;
+    overflow-x:hidden ;
+    border-right: 3px solid whitesmoke;
+}
+
+@keyframes letterAnimation{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 180px;
+    }
+}
+
+.navmenu ul li a{
+    text-decoration: none; 
+    color: #a09e9e;
+    padding: 15px 10px;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: 100%;
+    cursor: pointer;
+}
+
+.navmenu ul li a i{
+    font-size: 20px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: start;
+}
+
+.social-links a{
+    padding:  10px;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 15px;
+    color: white;
+    font-weight:bold;
+    border-radius: 100%;
+    background-color:#a09e9e;
+}
+
+
+.navmenu ul li a:hover {
+    color: white;
+}
+
+.social-links a:hover{
+    background-color: whitesmoke;
+    color: #a09e9e;
+}
+
+#demo{
+    color: whitesmoke;
+}
+
+@media only screen and (max-width:600px) {
+    .hero-info{
+       
+      /* text-align: center; */
+    }
+}
+.home-container{
+    position: relative;
+    display: flex;
+    text-align: start;
+    background-color: blue;
+}
+.home_row_container{
+    color: rgb(218, 216, 216);
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    justify-content: space-between;
+    /* padding: 20px; */
+}
+
+.Home_button_container{
+    position: relative;
+    padding: 30px 0px;
+}
+
+.Home_button{
+    background-color: whitesmoke;
+    padding:  18px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: rgb(46, 45, 45);
+    cursor: pointer;
+    border: none;
+    font-weight: 800;
+    margin-right: 5px;
+    
+}
+.Home_button_container .Home_btn_touch{
+    background-color: transparent;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+}
+.hero-btn:hover{
+    background-color: rgb(218, 216, 216);
+    color: rgb(46, 45, 45);
+    box-shadow: 10px 10px 30px  4px rgb(218, 216, 216);  
+
+}
+.hero-btn{
+}
+.home-col-container{
+    background-color: #1f1f1f;
+    text-align: start;
+    padding: 0px;
+}
+
+.home-col-container h1{
+    font-size: 70px;
+    color: rgb(218, 216, 216);
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    word-spacing: 5px;
+}
+.home-col-container h1 span{
+  text-decoration: underline;
+  font-family: "Nunito", sans-serif;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 4px;
+}
+.home-col-container h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(218, 216, 216);
+}
+
+.home-col-container p span{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    font-weight: 800;
+}
+
+.home-col-container p{   
+    padding: 10px 0px;
+    font-weight: 600;   
+}
+
+.home-col-container img{
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 15px 15px rgb(133, 133, 133);
+}
+
+.background-elements
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(159, 162, 165); */
+    z-index: -1;
+    display: flex;
+    justify-content: space-around;
+}
+.background-elements .bg-circle{
+    
+    background-color: rgb(110, 112, 114);
+    border-radius: 50%;
+}
+.background-elements .circle-1{
+    /* float: right; */
+    width: 200px;
+    height: 200px;
+ 
+    /* background-color: aquamarine; */
+}
+
+.background-elements .circle-2{
+
+       width: 300px;
+    height: 300px;
+}
+
+/* ************************** */
+

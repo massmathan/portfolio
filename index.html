@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.jsdelivr.net/npm/fastbootstrap@2.2.0/dist/css/fastbootstrap.min.css" rel="stylesheet" integrity="sha256-V6lu+OdYNKTKTsVFBuQsyIlDiRWiOmtC8VQ8Lzdm2i4=" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="index_page d-flex justify-content-start bg-secondary.bg-gradient">
+    <i class="header-toggle d-xl-none bi bi-list position-fixed" id="bi-list" onclick="toggle(true)" ></i>
+      <i class="header-toggle d-xl-none bi bi-x position-fixed" id="bi-x" style="visibility: hidden;" onclick="toggle(false)"></i>  
+
+    <header id="header" class="header dark-background d-flex flex-column justify-content-center " >
+    <div id="header-container" class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" id="active" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+          <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </header>
+  <main class="main_page bg-secondary.bg-gradient ">
+    <section id="hero-container" class="container-fluid-*  p-4 hero-container ">
+      <div class="container-fluid   text-white d-flex  justify-content-center flex-wrap hero-contents">
+          <div class="row " id = "hero-contents-row">
+                <div class="col-lg  hero-info ">
+                      <h1 class="display-1">Port<span class="text-decoration-underline underline-offset-8">Folio</span></h1>
+                      <h3 class="display-4">Mathan Raj</h3>
+                      <!-- <P class="lead">I'm a <span class="text-decoration-underline decoration-4 underline-offset-8 text-nowrap lead-content">Sofrtware Developer</span></P> -->
+
+                      <P class="lead">I'm a<span class="text-decoration-underline decoration-4 underline-offset-8 text-nowrap lead-content"> Software Developer</span></P>
+                      <p class="description fs-6 lh-base">Passionate about creating exceptional digital 
+                          experiences that blend innovative 
+                          design with functional development. 
+                          Let's bring your vision to life.</p>
+                      <div class="container-sm  d-flex flex-nowrap bg-transparent">
+                          <a href="#" class="btn hero-btn bg-secondary-subtle opacity-75 rounded-5 p-3 text-dark fw-bold text-nowrap m-3">View My Work</a>
+                          <a href="#" class="btn hero-btn bg-secondary opacity-75 rounded-5 p-3 text-white fw-bold border text-nowrap m-3">Get In Touch</a>
+                      </div>
+                      
+                    <div class="container-sm d-flex flex-nowrap social-links text-center bg-transparent">
+                      <a href="#" class=" rounded-5"><i class="bi bi-dribbble"></i></a>
+                      <a href="#" class=" rounded-5"><i class="bi bi-behance"></i></a>
+                      <a href="#" class=" rounded-5"><i class="bi bi-github"></i></a>  
+                      <a href="#" class="rounded-5"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg  d-flex flex-nowrap profile-container">
+                    <img class="img-fluid object-fit-cover profile-img" src="file:///C:/Users/KCDC%201/Desktop/kcdc%20cource%20java/portfolio/profile-2.webp" alt="" width="400px" height="400px">
+                </div>
+            </div>
+      </div>
+    </section> 
+  </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
