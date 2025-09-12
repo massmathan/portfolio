@@ -23,8 +23,8 @@ body{
 
 .main_page{
     width: 100%;
-     height: 5200px;   
-     margin-left:380px ;  
+     /* height: 5200px;    */
+     margin-left:300px ;  
      /* background-color: aqua; */
 }
 
@@ -32,7 +32,7 @@ body{
     padding: 20px;    
     display: flex;
     justify-content: start;
-    width: 350px;
+    width: 300px;
     height: 100%;
         overflow: hidden;
 
@@ -163,9 +163,6 @@ body{
     /* background-color: rgb(5, 19, 34); */
 }
 .hero-info{
-    /* z-index: 2; */
-    
-    /* background-color: rgb(44, 146, 194); */
     margin-left: 8%;
     padding: 15px;
     animation: slideRightMoveAnimation 1s ease ;
@@ -176,7 +173,6 @@ body{
 .profile-container{
     padding-bottom: 20px;
     padding-right: 20px;
-    /* background-color: aliceblue; */
     margin-left: 20%;
 }
 
@@ -193,7 +189,6 @@ body{
 .header-container{
     border-radius: 20px;
     background-color: #1f1f1f; 
-        /* background-color: #c22323d7;  */
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -203,7 +198,6 @@ body{
 .header-container .navmenu ul {
     width: 100%;
     padding: 0px;
-    /* font-family: "Nunito", sans-serif; */
 }
 
 .header-container .navmenu ul li{
@@ -215,17 +209,83 @@ body{
 
     display: flex;
     justify-content:start;
-    /* background-color: aqua; */
-    /* color: #1f1f1f; */
+}
+
+/* .letter-content
+{
+    background-color: gray;
+    padding: 5px;
+}
+
+.letter-content span{
+    opacity: 0; 
+    transform: translateY(20px);
+    animation: revealLetter  0.5s forwards;
+}
+
+.letter-content span:nth-child(1){
+    animation-delay:0s;
+}
+.letter-content span:nth-child(2){
+    animation-delay:1s;
+}
+.letter-content span:nth-child(3){
+    animation-delay:2s;
+}
+
+.letter-content span:nth-child(4){
+    animation-delay:3s;
+}
+.letter-content span:nth-child(5){
+    animation-delay:4s;
+}
+.letter-content span:nth-child(6){
+    animation-delay:5s;
+}
+.letter-content span:nth-child(7){
+    animation-delay:6s;
+}
+.letter-content span:nth-child(8){
+    animation-delay:7s;
+}
+.letter-content span:nth-child(9){
+    animation-delay:8s;
+}
+.letter-content span:nth-child(10){
+    animation-delay:9s;
+}
+.letter-content span:nth-child(11){
+    animation-delay:10s;
+}
+.letter-content span:nth-child(12){
+    animation-delay:11s;
+}
+.letter-content span:nth-child(13){
+    animation-delay:12s;
+}
+.letter-content span:nth-child(14){
+    animation-delay:13s;
+}
+.letter-content span:nth-child(15){
+    animation-delay:14s;
+}
+.letter-content span:nth-child(16){
+    animation-delay:15s;
+}
+.letter-content span:nth-child(17){
+    animation-delay:16s;
+} */
+.lead-content{
+    background-color: #6d6c6c;
 }
 
 .lead-content{
-    animation: letterAnimation 10s infinite;
+    background-color: #252424;
+    animation: letterAnimation 5s infinite;
     animation-fill-mode:both ;
-    animation-duration: 8s;
-    
+    animation-delay: 1s;
     /* background-color: aliceblue; */
-    width:300px;
+    width:260px;
     display: flex;
     margin-left:5px ;
     justify-content: start;
@@ -239,7 +299,7 @@ body{
         width: 0px;
     }
     100%{
-        width: 180px;
+        width: 200px;
     }
 }
 
@@ -267,25 +327,28 @@ body{
 .social-links{
     display: flex;
     justify-content: start;
+}   
+.social-links a {
+    padding: 10px 2px;
+    text-decoration: none;
 }
-
-.social-links a{
-    padding:  10px;
-    font-size: 20px;
-    margin-top: 15px;
-    margin-right: 15px;
+.social-links a i{
+    padding:  10px 12px;
+    font-size: 16px;
     color: white;
     font-weight:bold;
     border-radius: 100%;
     background-color:#a09e9e;
+    display: flex;
+    justify-content: center;
+    border: none;
 }
 
-
-.navmenu ul li a:hover {
+.navmenu ul li a i:hover {
     color: white;
 }
 
-.social-links a:hover{
+.social-links a i:hover{
     background-color: whitesmoke;
     color: #a09e9e;
 }
@@ -314,7 +377,6 @@ body{
     height: auto;
     background-color: aqua;
     justify-content: space-between;
-    /* padding: 20px; */
 }
 
 .Home_button_container{
@@ -331,8 +393,7 @@ body{
     cursor: pointer;
     border: none;
     font-weight: 800;
-    margin-right: 5px;
-    
+    margin-right: 5px; 
 }
 .Home_button_container .Home_btn_touch{
     background-color: transparent;
@@ -369,6 +430,7 @@ body{
 .home-col-container h3{
     font-size: 30px;
     font-weight: 700;
+    
     color: rgb(218, 216, 216);
 }
 
@@ -421,3 +483,196 @@ body{
 
 /* ************************** */
 
+
+.contact-us 
+{
+    margin:50px 0px;
+    height: 100vh;
+   
+}
+.contact-header{
+    /* background-color: rgb(13, 89, 155); */
+    overflow: hidden;
+    animation: contact-header 1s ease;
+    margin-bottom: 80px;
+    /* margin-bottom: 30px; */
+    
+}
+@keyframes contact-header{
+    0%{
+        transform: translateY(100%);
+    }100%{
+        transform: translateY(0px);
+    }
+}
+
+.contact-body{  
+    display: flex;
+    justify-content: start;
+     /* background-color: aliceblue; */
+     padding: auto;
+}
+@keyframes contact-info{
+    0%{
+        transform: translateY(100%);
+    }100%{
+        transform: translateY(0px);
+    }
+}
+.contact-body-row
+{
+    /* background-color: aquamarine;
+    padding: 20px; */
+    display: flex;
+    justify-content: space-between;
+}
+.hero-contact-info-container-body
+{
+    /* background-color: antiquewhite; */
+    margin: 30px;
+}
+.hero-contact-info-container
+{
+    background-color: rgb(43, 40, 40);
+    padding: 10px;
+    margin: 10px;    
+    
+}
+.hero-contact-info- header{
+    /* background-color: aqua; */
+    padding: 10px;
+}
+
+.contact-heading{
+    color: whitesmoke;
+    font-weight: 1000;
+    padding: 0px;
+}
+
+.contact-heading-info {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 0px; 
+    /* background-color: #6d6c6c; */
+}
+
+.hero-contact-info {
+    /* background-color: #252424; */
+    color: white;
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.hero-contact-info .contact-icon{
+    padding: 15px;
+    /* background-color: rgb(10, 141, 255); */
+    text-decoration: none;
+}
+.hero-contact-info .contact-icon i{
+    /* background-color: rgb(62, 119, 168); */
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size:25px;
+    color: black;
+    border-radius: 100%;
+    border: none;
+    background-color: rgb(177, 173, 173);
+}
+
+.hero-contact-info  .contact-icon i:hover{
+    background-color:rgb(143, 135, 135);
+    color: black;
+}
+
+.hero-contact-info .hero-contact-content  {
+        padding: 20px 0px; 
+}
+.hero-contact-info .hero-contact-content  span{
+        font-size: 14px;  
+        margin-bottom: 5px;  
+        color:rgb(119, 117, 117);
+}
+
+.hero-contact-info .hero-contact-content  h5{
+        font-size: 24px;    
+        color: black;
+        text-wrap: nowrap;
+        font-weight: bold;
+}
+
+
+.hero-contact-input-container{
+     display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+    justify-content: space-between;
+}
+
+.hero-contact-input-container input,textarea{
+    width: 100%;
+    padding: 18px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    outline: 1px solid rgb(94, 91, 91);   
+}
+
+.hero-contact-input-container input::placeholder{
+    width: 100%;
+    padding: 8px;
+    color: whitesmoke;
+}
+
+.hero-contact-input-container input:focus{
+    outline: 2px solid rgb(206, 198, 198);
+}
+.hero-contact-input-container textarea::placeholder{
+    padding: 8px;
+    color: whitesmoke;
+}
+
+.hero-contact-input-container textarea{
+    height: 200px;
+}
+
+.hero-contact-input-container textarea:focus{
+    outline: 2px solid rgb(206, 198, 198);
+    padding: 18px 15px;
+}
+
+.hero-contact-input-container .btn-msg {
+    padding: 15px 30px;
+    color: black;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color:white;
+}
+
+.hero-contact-input-container .btn-msg:hover{
+    color: black;
+    background-color:rgb(196, 192, 192) ;
+}
+
+.footer-container{
+    border-top: 1px solid rgb(90, 87, 87);
+}
+
+.profiles-img{
+    border: 4px solid gray;
+}
+
+.resume-container-1{
+    background-color: #6d6c6c;
+    padding: 20px;
+    border-radius: 10px;
+}
