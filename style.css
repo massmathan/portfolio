@@ -348,6 +348,10 @@ body{
     color: white;
 }
 
+.navmenu ul li a:hover {
+    color: white;
+}
+
 .social-links a i:hover{
     background-color: whitesmoke;
     color: #a09e9e;
@@ -487,7 +491,7 @@ body{
 .contact-us 
 {
     margin:50px 0px;
-    height: 100vh;
+    height: auto;
    
 }
 .contact-header{
@@ -519,23 +523,23 @@ body{
         transform: translateY(0px);
     }
 }
-.contact-body-row
-{
+.contact-body-row{
+    box-sizing: border-box;
     /* background-color: aquamarine;
     padding: 20px; */
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* padding: 10px; */
+    padding: 0px;
+    /* background-color: aliceblue; */
 }
-.hero-contact-info-container-body
-{
+.hero-contact-info-container-body{
     /* background-color: antiquewhite; */
-    margin: 30px;
+    padding: 15px;
 }
-.hero-contact-info-container
-{
+.hero-contact-info-container{
     background-color: rgb(43, 40, 40);
-    padding: 10px;
-    margin: 10px;    
+    padding: 25px;
     
 }
 .hero-contact-info- header{
@@ -675,4 +679,35 @@ body{
     background-color: #6d6c6c;
     padding: 20px;
     border-radius: 10px;
+}
+
+.skills{
+    /* background-color: rgb(70, 151, 223); */
+    width: 100%;
+    height: auto;
+    /* background-color: azure; */
+    padding: 10px;
+}
+
+.section-title{
+    color: white;
+    text-align: center;
+    /* background-color: aqua  ; */
+    padding: 8px;
+}
+
+.skill-container{
+    
+}
+.skills-category{
+    padding: 20px;
+    background-color: #232323;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+}
+
+.skills-category h3{
+    font-weight: 800;
+    padding: 15px 0px;
 }
